@@ -1,0 +1,31 @@
+$labels = array(
+        'name' => 'Runflat Solutions',
+        'singular_name' => 'Runflat Solution',
+        'add_new' => 'Add New',
+        'add_new_item' => 'Add New Runflat Solution',
+        'edit_item' => 'Edit Runflat Solution',
+        'new_item' => 'New Runflat Solution',
+        'all_items' => 'All Runflat Solutions',
+        'view_item' => 'View Runflat Solution',
+        'search_items' => 'Search Runflat Solutions',
+        'not_found' =>    'No Runflat Solutions found',
+        'not_found_in_trash' => 'No Runflat Solutions found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Runflat Solutions');
+
+    $args = array(
+        'labels' => $labels,
+        'supports' => array('title', 'editor', 'thumbnail','custom-fields','excerpt'),
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true, 
+        'show_in_menu' => true, 
+        'query_var' => true,
+        'rewrite' => array('slug' => 'runflat-solutions'),
+        'capability_type' => 'page',
+        //'taxonomies' => array('category'),
+        'has_archive' => true, 
+        'hierarchical' => false,
+        'menu_position' => null); 
+
+    register_post_type('runflat-solutions', $args);
